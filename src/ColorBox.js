@@ -8,17 +8,20 @@ class ColorBox extends Component {
     this.state = { copied: false };
     this.changeCopyState = this.changeCopyState.bind(this);
   }
+
+  // Making copied! animation and return to palette after 1.5 sec
   changeCopyState() {
     this.setState({ copied: true }, () => {
       setTimeout(() => this.setState({ copied: false }), 1500);
     });
   }
+
   render() {
     const { name, background } = this.props;
     const { copied } = this.state;
     return (
       <CopyToClipboard text={background} onCopy={this.changeCopyState}>
-        <div style={{ background }} className='ColorBox'>
+        <div style={{ background }} className="ColorBox">
           <div
             style={{ background }}
             className={`copy-overlay ${copied && "show"}`}
@@ -27,13 +30,13 @@ class ColorBox extends Component {
             <h1>copied!</h1>
             <p>{this.props.background}</p>
           </div>
-          <div className='copy-container'>
-            <div className='box-content'>
+          <div className="copy-container">
+            <div className="box-content">
               <span>{name}</span>
             </div>
-            <button className='copy-button'>Copy</button>
+            <button className="copy-button">Copy</button>
           </div>
-          <span className='see-more'>More</span>
+          <span className="see-more">More</span>
         </div>
       </CopyToClipboard>
     );
