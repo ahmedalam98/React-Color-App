@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Palette from "./Palette";
-import seedColors from "./seedColors";
-import { generatePalette } from "./colorHelper";
+import Palette from "./components/Palette";
+import seedColors from "./components//helpers/seedColors";
+import { generatePalette } from "./components/helpers/colorHelper";
 
 class App extends Component {
   render() {
