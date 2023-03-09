@@ -5,6 +5,7 @@ import MenuItem from "@mui/material/MenuItem";
 import CustomSlider from "./CustomSlider";
 import "./Navbar.css";
 import Snack from "./SnackBar";
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   constructor(props) {
@@ -29,7 +30,7 @@ class Navbar extends Component {
     return (
       <header className="Navbar">
         <div className="logo">
-          <a href="#N/A">React Color Picker</a>
+          <Link to="/">React Color Picker</Link>
         </div>
 
         <div className="slider-container">
