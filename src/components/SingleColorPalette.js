@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ColorBox from "./ColorBox";
-import Navbar from "./navbar/Navbar";
+import Navbar from "./Navbar";
 import PaletteFooter from "./PaletteFooter";
 import { Link } from "react-router-dom";
 

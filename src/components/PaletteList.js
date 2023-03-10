@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import MiniPalette from "./MiniPalette";
 import { withStyles } from "@mui/styles";
 
@@ -22,6 +23,11 @@ const styles = {
     display: "flex",
     width: "100%",
     justifyContent: "space-between",
+    alignItems: "center",
+    color: "white",
+    "& a": {
+      color: "white",
+    },
   },
   palettes: {
     boxSizing: "border-box",
@@ -45,6 +51,7 @@ class PaletteList extends Component {
         <div className={classes.container}>
           <nav className={classes.nav}>
             <h1>React Colors</h1>
+            <Link to="/palette/new">Create Palette</Link>
           </nav>
           <div className={classes.palettes}>
             {palettes.map((palette) => (
