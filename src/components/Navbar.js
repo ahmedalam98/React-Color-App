@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Select from "@mui/material/Select";
-import MenuItem from "@mui/material/MenuItem";
+import Select from "@material-ui/core/Select";
+import MenuItem from "@material-ui/core/MenuItem";
 //////////////////////////////////////////////
 import CustomSlider from "./CustomSlider";
 import "../styles/Navbar.css";

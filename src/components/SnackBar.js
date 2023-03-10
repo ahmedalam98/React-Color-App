@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Snackbar from "@mui/material/Snackbar";
-import Button from "@mui/material/Button";
-import CloseIcon from "@mui/icons-material/Close";
+import Snackbar from "@material-ui/core/Snackbar";
+import IconButton from "@material-ui/core/IconButton";
+import CloseIcon from "@material-ui/icons/Close";
 
 class Snack extends Component {
   render() {
@@ -20,14 +20,14 @@ class Snack extends Component {
         }}
         onClose={this.props.closeSnack}
         action={[
-          <Button
+          <IconButton
             onClick={this.props.closeSnack}
             color="inherit"
             key="close"
             aria-label="close"
           >
             <CloseIcon />
-          </Button>,
+          </IconButton>,
         ]}
       />
     );
