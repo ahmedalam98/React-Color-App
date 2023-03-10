@@ -30,6 +30,7 @@ class Palette extends Component {
         key={color.id}
         // Passing palette id & color id to make the URL params in ColorBox
         moreUrl={`/palette/${id}/${color.id}`}
+        showLink
       />
     ));
 
