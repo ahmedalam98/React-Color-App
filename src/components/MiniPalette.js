@@ -1,6 +1,7 @@
 import React from "react";
 import { withStyles } from "@mui/styles";
 
+// JSS styles of MiniPalette using Material UI
 const styles = {
   root: {
     backgroundColor: "white",

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import MiniPalette from "./MiniPalette";
 import { withStyles } from "@mui/styles";
 
+// JSS styles of PaletteList using Material UI
 const styles = {
   root: {
     backgroundColor: "blue",
@@ -32,6 +33,7 @@ const styles = {
 };
 
 class PaletteList extends Component {
+  // Moving to single palette page
   goToPalette(id) {
     this.props.history.push(`/palette/${id}`);
   }
