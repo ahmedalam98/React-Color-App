@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import MiniPalette from "./MiniPalette";
-import { withStyles } from "@mui/styles";
+import { withStyles } from "@material-ui/core/styles";
 
 // JSS styles of PaletteList using Material UI
 const styles = {

@@ -1,5 +1,5 @@
 import React from "react";
-import { withStyles } from "@mui/styles";
+import { withStyles } from "@material-ui/core/styles";
 
 // JSS styles of MiniPalette using Material UI
 const styles = {
