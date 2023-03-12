@@ -63,12 +63,15 @@ class PaletteFormNav extends Component {
       [evt.target.name]: evt.target.value,
     });
   }
+
   showForm() {
     this.setState({ formShowing: true });
   }
+
   hideForm() {
     this.setState({ formShowing: false });
   }
+
   render() {
     const { classes, open, palettes, handleSubmit } = this.props;
     return (

@@ -89,12 +89,12 @@ class NewPaletteForm extends Component {
     this.addRandomColor = this.addRandomColor.bind(this);
   }
 
-  handleDrawerOpen = () => {
-    this.setState({ open: true });
-  };
-
-  handleDrawerClose = () => {
-    this.setState({ open: false });
+  handleToggleOpen = () => {
+    if (!this.state.open) {
+      this.setState({ open: true });
+    } else {
+      this.setState({ open: false });
+    }
   };
 
   addNewColor(newColor) {
@@ -103,14 +103,17 @@ class NewPaletteForm extends Component {
       newColorName: "",
     });
   }
+
   handleChange(evt) {
     this.setState({
       [evt.target.name]: evt.target.value,
     });
   }
+
   clearColors() {
     this.setState({ colors: [] });
   }
+
   addRandomColor() {
     //pick random color from existing palettes
     const allColors = this.props.palettes.map((p) => p.colors).flat();
@@ -118,20 +121,20 @@ class NewPaletteForm extends Component {
     const randomColor = allColors[rand];
     this.setState({ colors: [...this.state.colors, randomColor] });
   }
-  handleSubmit(newPaletteName) {
-    const newPalette = {
-      paletteName: newPaletteName,
-      id: newPaletteName.toLowerCase().replace(/ /g, "-"),
-      colors: this.state.colors,
-    };
+
+  handleSubmit(newPalette) {
+    newPalette.id = newPalette.paletteName.toLowerCase().replace(/ /g, "-");
+    newPalette.colors = this.state.colors;
     this.props.savePalette(newPalette);
     this.props.history.push("/");
   }
+
   removeColor(colorName) {
     this.setState({
       colors: this.state.colors.filter((color) => color.name !== colorName),
     });
   }
+
   onSortEnd = ({ oldIndex, newIndex }) => {
     this.setState(({ colors }) => ({
       colors: arrayMove(colors, oldIndex, newIndex),
@@ -149,7 +152,7 @@ class NewPaletteForm extends Component {
           open={open}
           palettes={palettes}
           handleSubmit={this.handleSubmit}
-          handleDrawerOpen={this.handleDrawerOpen}
+          handleDrawerOpen={this.handleToggleOpen}
         />
         <Drawer
           className={classes.drawer}
@@ -161,7 +164,7 @@ class NewPaletteForm extends Component {
           }}
         >
           <div className={classes.drawerHeader}>
-            <IconButton onClick={this.handleDrawerClose}>
+            <IconButton onClick={this.handleToggleOpen}>
               <ChevronLeftIcon />
             </IconButton>
           </div>
