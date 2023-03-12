@@ -3,7 +3,7 @@ import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
 //////////////////////////////////////////////
 import CustomSlider from "./CustomSlider";
-import "../styles/Navbar.css";
+import "../styles/CSS/Navbar.css";
 import Snack from "./SnackBar";
 import { Link } from "react-router-dom";
 
