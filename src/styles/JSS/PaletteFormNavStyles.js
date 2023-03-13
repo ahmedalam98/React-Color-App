@@ -27,18 +27,28 @@ const styles = (theme) => ({
       duration: theme.transitions.duration.enteringScreen,
     }),
   },
+
   menuButton: {
     marginLeft: 12,
     marginRight: 20,
   },
+
   navBtns: {
     marginRight: "1rem",
     "& a": {
       textDecoration: "none",
     },
+    "@media (max-width:575.98px)": {
+      marginRight: "5rem",
+    },
   },
+
   button: {
     margin: "0 0.5rem",
+    "@media (max-width:575.98px)": {
+      margin: "0 0.2rem",
+      padding: "0.3rem",
+    },
   },
 });
 

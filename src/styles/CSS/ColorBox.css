@@ -8,7 +8,7 @@
   margin-bottom: -4px;
 }
 .SingleColorPalette .ColorBox {
-  height: 50%;
+  height: 33.3333%;
 }
 
 .ColorBox.go-back {
@@ -131,4 +131,44 @@
 .copy-msg p {
   font-size: 2rem;
   font-weight: 100;
+}
+
+/* 
+/////////////////////////
+---- Media Queries ------
+/////////////////////////
+*/
+
+/* ////////////////
+/* Tablet Screen */
+@media (max-width: 991.98px) {
+  .ColorBox {
+    width: 50%;
+    height: 20%;
+  }
+
+  .SingleColorPalette .ColorBox {
+    height: 10%;
+  }
+
+  .copy-msg h1 {
+    font-size: 4rem;
+  }
+}
+
+/* ////////////////
+/* Mobile Screen */
+@media (max-width: 575.98px) {
+  .ColorBox {
+    width: 100%;
+    height: 5%;
+  }
+
+  .SingleColorPalette .ColorBox {
+    height: 10%;
+  }
+
+  .copy-msg h1 {
+    font-size: 3rem;
+  }
 }

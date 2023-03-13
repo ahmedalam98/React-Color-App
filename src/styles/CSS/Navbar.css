@@ -25,3 +25,33 @@
   color: black;
   font-weight: 500;
 }
+
+/* 
+/////////////////////////
+---- Media Queries ------
+/////////////////////////
+*/
+
+/* ////////////////
+/* Mobile Screen */
+@media (max-width: 787px) {
+  .Navbar {
+    height: 10vh;
+  }
+  .logo {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .Navbar {
+    height: 8vh;
+  }
+  .logo {
+    display: none;
+  }
+
+  .select-container {
+    margin-right: auto;
+  }
+}

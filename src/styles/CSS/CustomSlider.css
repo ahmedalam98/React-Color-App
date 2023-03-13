@@ -1,4 +1,3 @@
-
 .rc-slider-track {
   background-color: transparent;
 }
@@ -23,4 +22,10 @@
   width: 340px;
   margin: 0 10px;
   display: inline-block;
+}
+
+@media (max-width: 575.98px) {
+  .slider {
+    width: 190px;
+  }
 }

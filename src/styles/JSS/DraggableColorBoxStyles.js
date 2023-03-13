@@ -2,6 +2,14 @@ const styles = {
   root: {
     width: "20%",
     height: "25%",
+    "@media (max-width:991.98px)": {
+      width: "50%",
+      height: "10%",
+    },
+    "@media (max-width:575.98px)": {
+      width: "100%",
+      height: "5%",
+    },
     margin: "0 auto",
     display: "inline-block",
     position: "relative",
