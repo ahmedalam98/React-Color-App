@@ -33,7 +33,7 @@
 */
 
 /* ////////////////
-/* Mobile Screen */
+/* Laptop Screen */
 @media (max-width: 787px) {
   .Navbar {
     height: 10vh;
@@ -43,6 +43,7 @@
   }
 }
 
+/* Mobile Screen */
 @media (max-width: 575.98px) {
   .Navbar {
     height: 8vh;

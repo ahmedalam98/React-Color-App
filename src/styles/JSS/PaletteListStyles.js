@@ -12,6 +12,12 @@ const styles = {
     alignItems: "flex-start",
     flexDirection: "column",
     flexWrap: "wrap",
+    "@media (max-width:1600px)": {
+      width: "80%",
+    },
+    "@media (max-width:575.98px)": {
+      width: "75%",
+    },
   },
   nav: {
     display: "flex",
@@ -28,7 +34,14 @@ const styles = {
     width: "100%",
     display: "grid",
     gridTemplateColumns: "repeat(3, 30%)",
-    gridGap: "5%",
+    gridGap: "2.5rem",
+    "@media (max-width:991.98px)": {
+      gridTemplateColumns: "repeat(2, 50%)",
+    },
+    "@media (max-width:575.98px)": {
+      gridTemplateColumns: "repeat(1, 100%)",
+      gridGap: "1rem",
+    },
   },
 };
 
