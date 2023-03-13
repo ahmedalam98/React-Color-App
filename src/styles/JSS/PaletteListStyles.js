@@ -21,9 +21,12 @@ const styles = {
     backgroundSize: "cover",
     overflow: "auto",
   },
+
   heading: {
     fontSize: "2rem",
+    display: "flex",
   },
+
   container: {
     width: "50%",
     display: "flex",

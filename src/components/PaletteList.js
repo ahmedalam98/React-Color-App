@@ -15,6 +15,7 @@ import styles from "../styles/JSS/PaletteListStyles";
 import blue from "@material-ui/core/colors/blue";
 import red from "@material-ui/core/colors/red";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import "../styles/CSS/PaletteList.css";
 
 class PaletteList extends Component {
   constructor(props) {
@@ -53,7 +54,14 @@ class PaletteList extends Component {
         <div className={classes.container}>
           <nav className={classes.nav}>
             <h1 className={classes.heading}>React Colors</h1>
-            <Link to="/palette/new">Create Palette</Link>
+
+            <div className="frame">
+              <Link to="/palette/new" style={{ textDecoration: "none" }}>
+                <button class="custom-btn">
+                  <span>Create Palette</span>
+                </button>
+              </Link>
+            </div>
           </nav>
           <TransitionGroup className={classes.palettes}>
             {palettes.map((palette) => (

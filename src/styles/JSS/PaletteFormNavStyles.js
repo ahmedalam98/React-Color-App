@@ -40,13 +40,13 @@ const styles = (theme) => ({
     },
     "@media (max-width:575.98px)": {
       marginRight: "5rem",
+      display: "flex",
     },
   },
 
   button: {
     margin: "0 0.5rem",
     "@media (max-width:575.98px)": {
-      margin: "0 0.2rem",
       padding: "0.3rem",
     },
   },

@@ -8,12 +8,13 @@
   margin-bottom: -4px;
 }
 .SingleColorPalette .ColorBox {
-  height: 33.3333%;
+  height: 50%;
 }
 
 .ColorBox.go-back {
   background-color: black;
   position: relative;
+  height: 50%;
 }
 
 .copy-button,
