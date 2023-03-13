@@ -21,12 +21,14 @@ class App extends Component {
   }
 
   deletePalette(id) {
-    this.setState(
-      (st) => ({
-        palettes: st.palettes.filter((palette) => palette.id !== id),
-      }),
-      this.syncLocalStorage
-    );
+    seedColors.forEach((palette) => {
+      this.setState(
+        (st) => ({
+          palettes: st.palettes.filter((palette) => palette.id !== id),
+        }),
+        this.syncLocalStorage
+      );
+    });
   }
 
   findPalette(id) {
@@ -105,6 +107,17 @@ class App extends Component {
                         palette={generatePalette(
                           this.findPalette(routeProps.match.params.id)
                         )}
+                      />
+                    </Page>
+                  )}
+                />
+                <Route
+                  render={(routeProps) => (
+                    <Page>
+                      <PaletteList
+                        palettes={this.state.palettes}
+                        deletePalette={this.deletePalette}
+                        {...routeProps}
                       />
                     </Page>
                   )}
