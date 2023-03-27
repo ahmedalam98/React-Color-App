@@ -38,6 +38,7 @@
 }
 
 .custom-btn:hover {
+  cursor: pointer;
   color: #fff;
 }
 

@@ -13,8 +13,8 @@ const styles = {
   root: {
     height: "100vh",
     display: "flex",
-    alignItems: "flex-start",
     justifyContent: "center",
+    alignItems: "center",
     backgroundColor: "#EDE8FF",
     backgroundImage: `url(${bg})`,
     backgroundAttachment: "fixed",
@@ -30,6 +30,7 @@ const styles = {
   container: {
     width: "50%",
     display: "flex",
+    justifyContent: "center",
     alignItems: "flex-start",
     flexDirection: "column",
     flexWrap: "wrap",
@@ -41,6 +42,7 @@ const styles = {
     },
   },
   nav: {
+    marginBottom: "24px",
     display: "flex",
     width: "100%",
     justifyContent: "space-between",
@@ -54,6 +56,7 @@ const styles = {
     boxSizing: "border-box",
     width: "100%",
     display: "grid",
+    justifyContent: "space-between",
     gridTemplateColumns: "repeat(3, 30%)",
     gridGap: "2.5rem",
     "@media (max-width:991.98px)": {
