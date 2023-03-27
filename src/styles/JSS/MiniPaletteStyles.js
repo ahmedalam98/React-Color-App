@@ -40,7 +40,7 @@ const styles = {
     marginBottom: "-4px",
   },
   deleteIcon: {
-    color: "white",
+    color: "rgba(0, 0, 0, 0.5)",
     backgroundColor: "#eb3d30",
     width: "20px",
     height: "20px",
@@ -50,6 +50,9 @@ const styles = {
     padding: "10px",
     zIndex: 10,
     opacity: 0,
+    "&:hover": {
+      color: "white",
+    },
   },
 };
 
