@@ -14,7 +14,7 @@ const styles = {
     height: "100vh",
     display: "flex",
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "flex-start",
     backgroundColor: "#EDE8FF",
     backgroundImage: `url(${bg})`,
     backgroundAttachment: "fixed",
