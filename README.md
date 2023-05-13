@@ -1,70 +1,147 @@
-# Getting Started with Create React App
+<div id="top"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT SHIELDS -->
 
-## Available Scripts
+![React](https://img.shields.io/badge/react-20232a?style=for-the-badge&logo=react&logocolor=61dafb)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Materia UI](https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white)
+![JSS](https://camo.githubusercontent.com/45b13f7a9724dcf21613c23f3aab8900a583ebd09d7c8c38cb31ea2350159703/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a53532d4637444631453f7374796c653d666f722d7468652d6261646765266c6f676f3d4a5353266c6f676f436f6c6f723d7768697465)
+![Vercel](https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logocolor=white)
 
-In the project directory, you can run:
+<!-- PROJECT LOGO -->
+</br>
+<div align="center">
+      <a href="https://react-ui-colors.vercel.app/">
+       <img src="img/logo.png" alt="Logo" width="80" height="80">
+      </a>
+    <p>
+    <h1 align="center">React-Color-App</h1>
+    <a href="https://react-ui-colors.vercel.app/">View Demo</a>
+    ·
+    <a href="https://github.com/ahmedalam98/React-Color-App/issues">Report Bug</a>
+    </p>
+</div>
 
-### `npm start`
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+      <li><a href="#built-with">Built With</a></li>
+      <li><a href="#features">Features</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contributing">Contributing</a></li>
+  </ol>
+</details>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- ABOUT THE PROJECT -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## About The Project
 
-### `npm test`
+A clone of websites like Flat UI Colors and Material UI Colors using React.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Preview](./img/preview1.png)
+![Preview](./img/preview2.png)
+![Preview](./img/preview3.png)
+![Preview](./img/preview4.png)
+![Preview](./img/preview5.png)
 
-### `npm run build`
+### Built With
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
+- Material-UI
+- React Color
+- chroma-js
+- emoji-mart
+- rc-slider
+- react-copy-to-clipboard
+- react-material-ui-form-validator
+- react-router
+- react-transition-group
+- svg-backgrounds
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- List default palettes with ability to delete palettes
+- Create custom color palette:
+  - contains colors entered by user through color picker or (Random Color) button
+  - enable user to change the order of ColorBoxes by **Drag & Drop**
+  - enable user to save custom palette with name and emoji 🚀
+- Explore color palettes and generate different color levels with slider
+- Click on color box to **copy** color code with the ability to change the color format from:
+  - `HEX` format
+  - `RGB` format
+  - `RGBA` format
+- Click on `More` button on each color box to generate different shades from selected color
 
-### `npm run eject`
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This project require some perquisites and dependencies to be installed, you can view it online using this [demo](https://react-ui-colors.vercel.app/). or you can find the instructions below:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation
 
-## Learn More
+> To get a local copy, follow these simple steps :
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the repo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```sh
+   git clone https://github.com/ahmedalam98/React-Color-App.git
+   ```
 
-### Code Splitting
+2. go to project folder
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```sh
+   cd REACT-COLOR-APP
+   ```
 
-### Analyzing the Bundle Size
+3. install dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```bash
+   npm install --force
+   ```
 
-### Making a Progressive Web App
+4. Run development server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```sh
+   npm start
+   ```
 
-### Advanced Configuration
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+<!-- CONTRIBUTING -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contributing
 
-### `npm run build` fails to minify
+Contributions are always welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
+
+## Acknowledgments
+
+- [Colt](https://github.com/Colt)
