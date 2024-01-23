@@ -5,7 +5,6 @@
 ![React](https://img.shields.io/badge/react-20232a?style=for-the-badge&logo=react&logocolor=61dafb)
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 ![Materia UI](https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white)
-![JSS](https://camo.githubusercontent.com/45b13f7a9724dcf21613c23f3aab8900a583ebd09d7c8c38cb31ea2350159703/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a53532d4637444631453f7374796c653d666f722d7468652d6261646765266c6f676f3d4a5353266c6f676f436f6c6f723d7768697465)
 ![Vercel](https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logocolor=white)
 
 <!-- PROJECT LOGO -->
